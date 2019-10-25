@@ -35,6 +35,10 @@ body {font-family: "Lato", sans-serif;}
   .sidebar a {font-size: 18px;}
 }
 
+.sidebar a{
+  color: rgba(238, 238, 238, 0.034);
+}
+
 a {
   margin-left: 25px;
   margin-right: 25px;
