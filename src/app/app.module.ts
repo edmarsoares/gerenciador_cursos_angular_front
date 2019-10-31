@@ -8,6 +8,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ParticipanteComponent } from './participante/participante.component';
 import { MiniCursoComponent } from './mini-curso/mini-curso.component';
 import { RealtimeComponent } from './realtime/realtime.component';
+import { RealtimeService } from './realtime/service/realtime.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { RealtimeComponent } from './realtime/realtime.component';
     routing,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [RealtimeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
