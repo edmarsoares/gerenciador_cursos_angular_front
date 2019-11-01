@@ -1,11 +1,24 @@
-<div class="container">
-  <div class="row">
+<header>DASHBOARD</header>
 
-    <div class="col-sm" *ngFor="let data of dadosTempoReal">
-      {{ data.nome }}
-    </div>
+  <div class="container border">
+                
 
-  </div>
-</div>   
+
+        <div class="card" *ngFor="let data of dadosTempoReal" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">  {{ data.nome }} </h5>
+            <p class="card-text"> {{ data.descricao }} </p>
+            <a href="#" class="card-link">Link de inscrição</a>
+            <a href="#" class="card-link">Outro link</a>
+          </div>
+        </div>
+     
+    
+  </div>  
+
+
+
+
+ 
 
 
