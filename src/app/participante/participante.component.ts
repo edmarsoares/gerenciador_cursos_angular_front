@@ -10,8 +10,9 @@ export class ParticipanteComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log("chegooooooooooooooooooooouuuuS");
-    
+    console.log("chegooooooooooooooooooooouuuu");
   }
 
 }
+
+
