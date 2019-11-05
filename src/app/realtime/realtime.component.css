@@ -16,12 +16,16 @@ header {
 
     font-size: 30px;
     /* flex-wrap: wrap; */
-    margin-left: 45px;margin-top: 15px;
     color: #1a2035;
 }
 
 .card {
     margin-top: 30px;
+}
+
+.card:hover {
+    box-shadow: 0 0 15px #222;
+    cursor: pointer;
 }
 
 .cardlist {
@@ -33,7 +37,7 @@ header {
     /* align-content: flex-start; */
     /* position: absolute; */
     width: 100%;
-    margin-right: 40px;
+    
 }
 
 
