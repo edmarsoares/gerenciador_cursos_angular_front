@@ -1,7 +1,8 @@
-<header> <i class="fa fa-fw fa-home"></i> DASHBOARD</header>
-  
+
   <div class="conteudo">
 
+      <header> <i class="fa fa-fw fa-home"></i> DASHBOARD</header>
+      <div class="cardlist">
         <div class="card" *ngFor="let data of dadosTempoReal" style="width: 18rem;">
           <div class="card-body">
             <h5 class="card-title">  {{ data.nome }} </h5>
@@ -10,6 +11,7 @@
             <a href="#" class="card-link">Link de inscrição</a>
           </div>
         </div>
+      </div>
       
   </div>  
 

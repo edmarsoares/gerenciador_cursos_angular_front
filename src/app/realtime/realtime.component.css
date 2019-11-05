@@ -8,24 +8,32 @@
 .conteudo {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    align-content: flex-start;
-    position: absolute;
-    /* width: 100%; */
-    height: 100%;
+    flex-direction: column;
+   
 }
 header {
-    /* background-color: #1a2035; */
-    /* align-self:flex-start ; */
-    position: relative;
+    align-content: stretch;
+
     font-size: 30px;
+    /* flex-wrap: wrap; */
     margin-left: 45px;margin-top: 15px;
     color: #1a2035;
-
 }
 
 .card {
     margin-top: 30px;
 }
+
+.cardlist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: space-around;
+    /* align-content: flex-start; */
+    /* position: absolute; */
+    width: 100%;
+    margin-right: 40px;
+}
+
+
