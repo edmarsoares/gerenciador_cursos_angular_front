@@ -10,6 +10,8 @@ import { MiniCursoComponent } from './mini-curso/mini-curso.component';
 import { RealtimeComponent } from './realtime/realtime.component';
 import { RealtimeService } from './realtime/service/realtime.service';
 import { ProfessorComponent } from './professor/professor.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ParticipanteService } from './participante/service/participante.service';
 
 @NgModule({
   declarations: [
@@ -23,9 +25,10 @@ import { ProfessorComponent } from './professor/professor.component';
   imports: [
     BrowserModule,
     routing,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
-  providers: [RealtimeService],
+  providers: [RealtimeService, ParticipanteService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { } 

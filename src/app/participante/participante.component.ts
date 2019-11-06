@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ParticipanteService } from './service/participante.service';
 
 @Component({
   selector: 'app-participante',
@@ -7,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParticipanteComponent implements OnInit {
 
-  constructor() { }
+  constructor(private participanteService:  ParticipanteService) { }
 
   ngOnInit() {
-    console.log("chegooooooooooooooooooooouuuu");
+    this.getAll();
+  }
+
+  getAll(){
+    debugger;
+    this.participanteService.getById(1).subscribe(data => {
+      
+      console.log("vamos porra", data);
+    })
   }
 
 }
