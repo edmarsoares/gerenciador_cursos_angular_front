@@ -4,3 +4,22 @@ body {
     font-family: Roboto,Helvetica,Arial,sans-serif;
     font-size: 14px;
 }
+
+header {
+    font-size: 25px;
+    color: #1a2035;
+}
+
+.controles {
+    margin-top: 20px;
+}
+
+span {
+    font-size: 17px;
+}
+
+.btnSalvar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

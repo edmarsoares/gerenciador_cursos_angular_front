@@ -13,10 +13,7 @@
 }
 header {
     align-content: stretch;
-
-    font-size: 30px;
     /* flex-wrap: wrap; */
-    color: #1a2035;
 }
 
 .card {

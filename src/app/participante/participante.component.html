@@ -1,1 +1,43 @@
-<H1>participante</H1>
+<div class="conteudo">
+
+    <header><i class="fa fa-fw fa-user"></i>Participante</header>
+
+    <form #form="ngForm"  [formGroup]="formGroup" >
+        <div class="row">
+            <div class="col">
+               <div class="controles"  formGroupName="usuario"> 
+                   <span> Nome :</span><input formControlName="nome" type="text" class="form-control" placeholder="Nome">
+                </div>
+                <span class="error-message"
+                *ngIf="form.submitted && controls.participante.get('usuario').get('nome').errors">Insira o nome</span>
+
+                <div class="controles">
+                   <span> Data de nascimento :</span> <input formControlName="dataNascimento" class="form-control" type="date" name="dataNasc" placeholder="data de nascimento">
+                </div>
+
+                <div class="controles">
+                    <span> Cpf :</span><input formControlName="cpf" class="form-control" type="text" name="cpf" placeholder="cpf">
+                </div>
+            </div>
+            <div class="col">
+                <div class="controles" formGroupName="usuario">
+                    <span> Email :</span><input formControlName="email" class="form-control" type="email" name="email" placeholder="email">
+                </div>
+
+                <div class="controles" formGroupName="usuario">
+                    <span> Login de acesso :</span><input formControlName="username" class="form-control" type="text" name="login" id="" placeholder="login">
+                </div>
+
+                <div class="controles" formGroupName="usuario">
+                    <span> Senha :</span><input formControlName="password" class="form-control" type="text" class="form-control" placeholder="senha">
+                </div>
+            </div>
+           
+        </div>
+        <div class="btnSalvar">
+            <input type="submit" value="Salvar" class="btn btn-primary btn-save">
+        </div>
+
+    </form>
+
+</div>

@@ -12,7 +12,8 @@ import { RealtimeService } from './realtime/service/realtime.service';
 import { ProfessorComponent } from './professor/professor.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ParticipanteService } from './participante/service/participante.service';
-
+import { ListagemParticipanteComponent } from './participante/listagem-participante/listagem-participante.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,12 +22,16 @@ import { ParticipanteService } from './participante/service/participante.service
     MiniCursoComponent,
     RealtimeComponent,
     ProfessorComponent,
+    ListagemParticipanteComponent,
   ],
   imports: [
     BrowserModule,
     routing,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule 
+    
   ],
   providers: [RealtimeService, ParticipanteService],
   bootstrap: [AppComponent]

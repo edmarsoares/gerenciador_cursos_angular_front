@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ParticipanteService } from './service/participante.service';
+import { FormGroup } from '@angular/forms';
+import { Participante } from './participante';
+
 
 @Component({
   selector: 'app-participante',
@@ -8,10 +11,14 @@ import { ParticipanteService } from './service/participante.service';
 })
 export class ParticipanteComponent implements OnInit {
 
+  formGroup: FormGroup;
+
   constructor(private participanteService:  ParticipanteService) { }
 
   ngOnInit() {
-    this.getAll();
+    this.formGroup= Participante.getControl();
+    console.log("Inicializando os formControls", this.formGroup.controls);
+    
   }
 
   getAll(){
